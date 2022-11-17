@@ -19,4 +19,5 @@ buildNumber.properties
 ./**/ASSEMBLY_EXCEPTION
 ./**/LICENSE
 ./**/THIRD_PARTY_README
-
+./**/.DB_Store
+.DB_Store
