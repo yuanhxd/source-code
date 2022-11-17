@@ -21,3 +21,6 @@ buildNumber.properties
 ./**/THIRD_PARTY_README
 ./**/.DB_Store
 .DB_Store
+*.iml
+./**/make
+./**/*.iml
