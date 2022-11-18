@@ -1212,7 +1212,10 @@ public abstract class AbstractQueuedSynchronizer
      *            {@link #tryAcquire} but is otherwise uninterpreted and
      *            can represent anything you like.
      */
+
+    // 获取锁，arg 可以随意设置
     public final void acquire(int arg) {
+        // 尝试获取锁，这是一个模板方法，具体实现在子类中，例如 FairSync.tryAcquire 实现
         if (!tryAcquire(arg) &&
                 acquireQueued(addWaiter(Node.EXCLUSIVE), arg))
             selfInterrupt();
